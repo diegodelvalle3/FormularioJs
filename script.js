@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const formButton = document.getElementById(`envio${idSuffix}`)
         formButton.setAttribute('disabled', true)
 
-        const inputs = document.querySelectorAll('input')
+        const inputs = form.querySelectorAll('input')
 
         inputs.forEach((input) => {
 
@@ -58,12 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         validationState.capacidad = isValid
                         break
                 }
-
-                checkAllValidations()
             })
         })
 
-        const selects = document.querySelectorAll('select')
+        const selects = form.querySelectorAll('select')
         selects.forEach((select) => {
             select.addEventListener('blur', (e) => {
                 const value = e.target.value
@@ -79,8 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     toggleError(helpId, true)
                     validationState[selectId] = true
                 }
-
-                checkAllValidations()
             })
         })
 
@@ -97,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const finalData = {
                 ...data,
                 ...extraData(data),
-                numeroConcat: (`}${data.lada}${data.telefono}`),
+                numeroConcat: (`${data.lada}${data.telefono}`),
                 url: location.href,
             }
 
