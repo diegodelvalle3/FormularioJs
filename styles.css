@@ -25,7 +25,7 @@ body {
     backdrop-filter: blur(30px);
     padding: 20px;
     border-radius: 10px;
-    width: 400px;
+    width: 430px;
 }
 
 .formulario input {
@@ -45,7 +45,7 @@ body {
 }
 
 .formulario input::placeholder {
-    color: rgb(224, 224, 224)
+    color: rgb(255, 255, 255)
 }
 
 .input-group-text {
@@ -82,7 +82,7 @@ body {
 }
 
 .formulario textarea::placeholder {
-    color: rgb(224, 224, 224);
+    color: rgb(255, 255, 255);
 }
 
 .formulario textarea:focus {
@@ -107,4 +107,28 @@ body {
 .formulario button[type="submit"]:hover {
     background-color: #00677e !important;
     color: white !important;
+}
+
+.formulario button[type="submit"]:disabled {
+    background-color: #b6b6b6 !important;
+    cursor: not-allowed;
+}
+
+.invalid-input {
+    color: white;
+    text-align: left;
+    font-size: 13px;
+    background-color: rgb(1, 84, 95);
+    border-radius: 0px 0px 5px 5px;
+    padding: 2px 7px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+    display: none;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
 }
