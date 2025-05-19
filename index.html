@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+
+    <title>Hola</title>
+</head>
+
+<body>
+    <div class="container-form">
+        <h1 class="text-white mb-5">Plantas de tratamiento de aguas residuales</h1>
+
+        <div class="d-flex row text-white align-items-center">
+            <div class="col-6 text-center">
+                <h4>¿Cuál es el precio de una planta de tratamiento?</h2>
+                    <p class="text-left">El precio de una planta de tratamiento está determinado por dos factores:
+                        La norma de aguas residuales que debe cumplir su descarga de agua tratada.
+                        El volumen de agua residual que se va a tratar. <br>
+
+                        La importancia de adquirir plantas de tratamiento que en verdad cumplan con las normas de aguas
+                        residuales, está en que en México, la Ley de aguas residuales sanciona todas aquellas descargas
+                        de
+                        aguas
+                        residuales que no cumplan con los parámetros de eliminación de contaminantes marcados; estas
+                        sanciones
+                        pueden ser con la suspensión de los proyectos de construcción, y con multas que pueden llegar a
+                        ser
+                        más
+                        costosas que las mismas plantas de tratamiento. <br>
+
+                        Además de conocer cuál de las normas de aguas residuales deben cumplir las plantas de
+                        tratamiento
+                        para
+                        evitar problemas legales, también es importante conocerlas porque esas normas determinan el
+                        precio
+                        de su
+                        planta de tratamiento; es decir, si usted requiere cumplir una NOM 002, el precio de su planta
+                        puede
+                        estar casi a la mitad del precio de una planta de tratamiento que cumpla con la NOM 001 C <br>
+
+                        En Aclara, contamos con más de 600 plantas de tratamiento de aguas residuales en México y
+                        Latinoamérica
+                        y 20 años de experiencia, permítanos revisar su proyecto e indicarle cuál de las normas de aguas
+                        residuales le aplica a su descarga cumplir, así como el precio de su planta de tratamiento.</p>
+            </div>
+
+            <div class="col-6 justify-content-center d-flex">
+                <div class="formulario">
+                    <h4 class="text-center mb-3">Solicite información</h4>
+
+                    <form method="post" class="d-flex flex-column gap-2">
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"
+                                name="nombre" id="nombre" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="email" class="form-control" placeholder="E-mail" aria-label="email"
+                                name="email" id="email" aria-describedby="basic-addon1">
+                        </div>
+
+
+                        <div class="row g-3">
+                            <div class="col-4">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="number" class="form-control" placeholder="Lada" aria-label="lada"
+                                        name="lada" id="lada" maxlength="3" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+
+                            <div class="col-8">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="number" class="form-control" placeholder="Número" aria-label="telefono"
+                                        name="telefono" id="telefono" maxlength="7" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3 w-100">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+
+                            <!-- Intercambiar select por el selec correcto -->
+                            <select name="norma" id="norma" class="form-select" aria-label="Default select example">
+                                <option value="001" selected disabled>Seleccione una norma</option>
+                                <option value="001">Norma 001</option>
+                                <option value="002">Norma 002</option>
+                                <option value="003">Norma 003</option>
+                            </select>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="text" class="form-control" placeholder="Capacidad de descarga"
+                                        aria-label="email" name="capacidad" id="capacidad"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+
+                                    <!-- Intercambiar select por el selec correcto -->
+                                    <select name="unidades" id="unidades" class="form-select"
+                                        aria-label="Default select example">
+                                        <option value="001" selected disabled>Unidad</option>
+                                        <option value="001">LPS</option>
+                                        <option value="002">Personas</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <textarea name="mensaje" id="mensaje" class="form-control"
+                                placeholder="Comentarios adicionales"></textarea>
+                        </div>
+
+                        <button type="submit">Enviar</button>
+
+                        </button>
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/script.js"></script>
+
+
+</body>
+
+</html>

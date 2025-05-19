@@ -1,0 +1,110 @@
+body {
+    background-image: url('/agua.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
+.container-form {
+    width: 97%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.212);
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.container-form p {
+    text-align: justify;
+    margin-top: 7px;
+}
+
+.formulario {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.formulario input {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    height: 40px;
+    padding: 10px;
+    color: white;
+}
+
+.formulario input:focus {
+    border: solid 1px #49b3cc !important;
+    box-shadow: #49b3cc 0px 0px 5px;
+    background-color: transparent;
+    color: white;
+}
+
+.formulario input::placeholder {
+    color: rgb(224, 224, 224)
+}
+
+.input-group-text {
+    background-color: #49b3cc !important;
+    border: none;
+    color: white !important;
+
+}
+
+.formulario select {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 0px 5px 5px 0px;
+    color: rgb(255, 255, 255);
+    padding: 2px 10px;
+    height: 39px;
+}
+
+.formulario select:focus {
+    color: white;
+}
+
+.formulario select>option {
+    color: rgb(0, 0, 0);
+}
+
+.formulario textarea {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    color: white !important;
+    padding: 10px;
+    resize: none;
+}
+
+.formulario textarea::placeholder {
+    color: rgb(224, 224, 224);
+}
+
+.formulario textarea:focus {
+    background-color: transparent;
+    border: solid 2px #49b3cc !important;
+    box-shadow: none;
+}
+
+.formulario button[type="submit"] {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #1896b3;
+    border: none !important;
+    padding: 7px 20px;
+    color: white !important;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.formulario button[type="submit"]:hover {
+    background-color: #00677e !important;
+    color: white !important;
+}
